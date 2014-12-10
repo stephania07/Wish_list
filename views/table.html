@@ -1,0 +1,18 @@
+<table>
+  <thead>
+		<tr>
+		<th>Item</th>
+		<th>Link</th>
+		<th>Picture</th>
+		</tr>				
+  </thead>
+ <tbody>
+   <tr ng-repeat="wish in wishCtrl.wishes">
+		 <td>{{wish.item}}</td>		
+		 <td><a ng-href="{{wish.link}}"></a>}</td>		
+		 <td><img ng-src="{{wish.image}}"</td>		
+   </tr>
+ <tbody>
+
+</table>
+

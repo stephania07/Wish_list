@@ -1,0 +1,25 @@
+{
+  "name": "Wish_list",
+  "version": "0.0.1",
+  "homepage": "https://github.com/stephania07/Wish_list",
+  "authors": [
+    "\"Alex\""
+  ],
+  "description": "Wish List",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.6",
+    "angular-route": "~1.3.6",
+    "bootstrap": "~3.3.1",
+    "jquery": "~2.1.1"
+  }
+}
