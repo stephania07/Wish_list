@@ -1,7 +1,7 @@
 ;(function(){
   'use strict';
 	angular.module("wishListApp")
-  .controller("tableController", function(firebaseFactory){
+  .controller("tableController", function(firebaseFactory, $location){
 	var vm = this;
 	vm.getWish = function(){
 	firebaseFactory.getWishes(function(data){
@@ -13,6 +13,7 @@
 		firebaseFactory.addNewWish(wish, function(cb){
 		  vm.wishes[vm.wishes.name] = wish;
 			vm.newWish = null;
+			  $location.path("/");
 		});
 		}
 	 vm.deleteWish = function(id){
