@@ -1,6 +1,5 @@
 ;(function(){
 
-				console.log('routes')
   'use strict';
 	angular.module("wishListApp")
 	.config(function($routeProvider){
@@ -10,9 +9,23 @@
       controller: "tableController",
       controllerAs: "wishCtrl"			
 		})
+	  .when('/new', {
+		  templateUrl: 'views/form.html',
+			controller: "tableController",
+			controllerAs: "wishCtrl"			
+		})
+		.when('/:id', {
+		  templateUrl: 'views/show.html',
+			controller: "ShowController",
+		  controllerAs: "show"
+		})
+    
+		
+
+
     .otherwise({redirectTo: '/'});	
 	})
-
+  
 
 
 })();

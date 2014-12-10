@@ -5,4 +5,5 @@ img {
 .container-fluid {
   margin-left: auto;
 	margin-right: auto;
+  width: 980px;
 }

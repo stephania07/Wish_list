@@ -1,0 +1,9 @@
+<form>
+ <label>Item</label>
+  <input type="text" class="form-control" ng-model="wishCtrl.newWish.item" required/>
+ <label>URL</label>
+ <input type="text" class="form-control" ng-model="wishCtrl.newWish.link"/>
+ <label>Image</label>
+ <input type="text" class="form-control" ng-model="wishCtrl.newWish.image"/>
+  <input type="submit" value="Submit" ng-click="wishCtrl.addWish(wishCtrl.newWish)"/>
+</form>
