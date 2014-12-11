@@ -30,7 +30,6 @@
 	firebaseFactory.editWish(vm.newWish, function(data){
 	  $location.path("/");
 	})				
-	
 	};
 	})
 })();

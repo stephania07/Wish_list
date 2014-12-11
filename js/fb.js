@@ -11,7 +11,7 @@
 	   .error(function(err){
 		   console.log(err);
 		 })
-		 }
+	}
 	 function addNewWish(wish, cb){
 	   $http.post(url + ".json", wish)
 		 .success(function(data){
@@ -19,31 +19,30 @@
 		 })			
 	   .error(function(err){
 		   console.log(err);
-		 })
+		})
 	 }
-		 function removeWish(id, cb){
-		   $http.delete(url + id + '.json')			 
-		   .success(function(data){
-			   cb(data);
-			 })
-			 .error(function(err){
-			   console.log(err);
-			 })
-	 }
-		 function editWish(wish, cb){
-		   $http.patch(url + $location.$$path + ".json" , wish)
-			 .success(function(data){
-			   cb(data);
-			 })				 
-		   .error(function(err){
-			   console.log(err);
-			 })
-		 }
+	function removeWish(id, cb){
+	  $http.delete(url + id + '.json')			 
+	    .success(function(data){
+	      cb(data);
+		})
+		.error(function(err){
+		  console.log(err);
+		})
+	}
+	function editWish(wish, cb){
+	  $http.patch(url + $location.$$path + ".json" , wish)
+	    .success(function(data){
+		  cb(data);
+		})				 
+		.error(function(err){
+		  console.log(err);
+		})
+	}
      return {getWishes: getWishes,
-						 addNewWish: addNewWish,
-	           removeWish: removeWish,
+			 addNewWish: addNewWish,
+	         removeWish: removeWish,
              editWish: editWish
-
-		 }	
+			}	
 	})				
 })();

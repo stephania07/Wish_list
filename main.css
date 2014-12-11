@@ -1,6 +1,10 @@
 img {
 	max-width: 200px;    		
 }
+h1{
+	font-weight: bold;
+	font-family: 'Droid Serif', serif;
+}
 
 .container-fluid {
   margin-left: auto;
