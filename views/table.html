@@ -1,21 +1,22 @@
-<table class="table-striped">
-  <thead>
+<table  class="table">
+  <thead class="text-center">
 		<tr>
-		<th>Item</th>
-		<th>Link</th>
-		<th>Picture</th>
-		<th>Edit</th>
-		<th>Delete</th>
+		<th >Item</th>
+		<th >Link</th>
+		<th class="text-center">Picture</th>
+		<th >Edit</th>
+		<th >Delete</th>
 		</tr>				
   </thead>
  <tbody>
  <tr ng-repeat="(wishId, wish) in wishCtrl.wishes">
 		 <td>{{wish.item}}</td>		
 		 <td><a ng-href="{{wish.link}}">Link</a></td>		
-		 <td><img ng-src="{{wish.image}}"</td>
+		 <td><img class="img-circle" ng-src="{{wish.image}}"</td>
 		 <td><a class="btn btn-info" href="/#/{{wishId}}"	>Edit</a>	 
      <td><button class="btn btn-danger" ng-click="wishCtrl.deleteWish(wishId)">Delete</button></td>  
  </tr>
- <tbody>
+ </tbody>
 </table>
+
 

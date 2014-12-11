@@ -19,13 +19,7 @@
 			controller: "ShowController",
 		  controllerAs: "show"
 		})
-    
-		
-
 
     .otherwise({redirectTo: '/'});	
 	})
-  
-
-
 })();
